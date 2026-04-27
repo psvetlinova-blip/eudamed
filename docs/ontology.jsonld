@@ -1,0 +1,2009 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#associatedRiskType"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If the incident is due to the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IncidentDueToDevice"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid16"
+    }, {
+      "@id" : "_:genid14"
+    }, {
+      "@id" : "_:genid12"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailureIncident"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Harmed the patient during intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IncidentCausedHarmToPatient"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    }, {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#associatedRiskType"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarmIncident"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#domain"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Polina Svetlinova"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This ontology is a formal and semantic representation of the catalog of medical and in vitro diagnostic devices operating under the European Union's legal framework. The model structures the relationship between products, their risk levels (according to MDR and IVDR), the responsible parties (manufacturers), and the surveillance cycle (incidents and corrective actions). Its objective is to provide a shared knowledge base that facilitates clinical safety traceability."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-04-27T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#vann:preferredNamespacePrefix" : [ {
+    "@value" : "SRO"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@value" : "V1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "This ontology provides a formal framework for representing medical device safety data and post-market surveillance under the EUDAMED regulatory context. It defines core classes such as Medical Devices, Manufacturers, and Incidents, along with their hierarchical relationships and safety risks. By leveraging standardized vocabularies like Schema.org and Dublin Core, the model ensures semantic interoperability for tracking corrective actions and serious adverse events, facilitating structured data exchange within the European medical device ecosystem."
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  }, {
+    "@value" : "First Version of EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical device that depends on a source of energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Polina Petrova"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An active medical device designed to be implanted in the body and powered by an internal or external energy source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Polina Petrova"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of contamination affecting the safety or effectiveness of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contamination Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to unauthorized access, cyberattacks, or data breaches involving the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cybersecurity Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableActiveDevice" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#device_type" : [ {
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose" : [ {
+    "@value" : "Ventricular assist device for end-stage heart failure"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di" : [ {
+    "@value" : "(01)00380740009095"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveImplant", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#device_type" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di" : [ {
+    "@value" : "(01)00380740009112"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableDevice" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose" : [ {
+    "@value" : "Transcatheter aortic valve replacement (TAVI)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di" : [ {
+    "@value" : "(01)00800002222291"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableActiveDevice" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose" : [ {
+    "@value" : "Drug-eluting coronary stent"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "SYNERGY Stent System"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "ClassIIb"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di" : [ {
+    "@value" : "(01)08714729002817"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveImplant", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose" : [ {
+    "@value" : "Cardiac resynchronization therapy lead"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di" : [ {
+    "@value" : "(01)08714729004873"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/resource/Medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The combination of the likelihood of occurrence of harm and the severity of that harm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceFailure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailureIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident where Device Failured"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceFailureIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DevicePerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A malfunction or breakdown of a device that prevents it from performing as intended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DevicePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceSafety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A problem related to the device not achieving its expected performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Performance Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A risk associated with unsafe conditions or improper functioning of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Safety Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of incorrect or delayed diagnosis due to device limitations or errors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagnostic Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An action taken by a manufacturer to reduce the risk of death or serious deterioration in health associated with a medical device already placed on the market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Field Safety Corrective Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SafetyAlert" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-01T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0â€“3.0."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "850"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref" : [ {
+    "@value" : "EU-FSCA-2024-000001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope" : [ {
+    "@value" : "All HeartMate 3 LVAD units implanted since 2020"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status" : [ {
+    "@value" : "Open"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Recall" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-28T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#closure_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-05-31T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected" : [ {
+    "@value" : "EU-wide + UK"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided. 97% of affected devices successfully replaced."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1240"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref" : [ {
+    "@value" : "EU-FSCA-2024-000002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope" : [ {
+    "@value" : "Micra AV lots manufactured between 2022-09 and 2023-03"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status" : [ {
+    "@value" : "Closed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InSituCorrection" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-15T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#closure_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-06-30T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "320"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref" : [ {
+    "@value" : "EU-FSCA-2024-000003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope" : [ {
+    "@value" : "Portico THV sizes 23mm and 25mm from lots before 2023-11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SafetyAlert" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-04-10T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2100"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref" : [ {
+    "@value" : "EU-FSCA-2024-000004"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-005"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope" : [ {
+    "@value" : "All ACUITY X4 quadripolar LV leads"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status" : [ {
+    "@value" : "Open"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-10T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-08T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome" : [ {
+    "@value" : "Serious patient injury - embolic stroke"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-15T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-01T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-29T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome" : [ {
+    "@value" : "Device malfunction - premature battery depletion"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "72"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-03T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported" : [ {
+    "@value" : "Italy"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-18T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-15T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome" : [ {
+    "@value" : "Surgical intervention required - valve re-anchoring"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "67"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-20T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-002"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-05T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000004"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-02-28T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-004"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome" : [ {
+    "@value" : "Device malfunction - stent fracture"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-03T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning."
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-16T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000005"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-12T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-005"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome" : [ {
+    "@value" : "Surgical intervention required - lead extraction"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "63"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-18T00:00:00"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical device intended to be totally or partially introduced into the human body and remain there after the procedure, requiring a source of energy to operate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical device intended to be placed inside the human body, either permanently or for a prolonged period."
+  }, {
+    "@value" : "Implantable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InSituCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A corrective action performed directly on the device at its location without removing it from service."
+  }, {
+    "@value" : "In Situ Correction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device used to perform tests on samples such as blood or tissue taken from the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In Vitro Diagnostic Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event related to the use of a medical device that has caused or could potentially cause harm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of infection caused by contamination or improper sterilization of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Infection Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of physical harm or injury resulting from the use of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Injury Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk caused by external interference affecting the device’s operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interference Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number" : [ {
+    "@value" : "IE/2017/001234"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority" : [ {
+    "@value" : "Health Products Regulatory Authority (HPRA)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email" : [ {
+    "@value" : "regulatory@medtronic.com"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn" : [ {
+    "@value" : "SRN-IE-MED-0001"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Medtronic plc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number" : [ {
+    "@value" : "DE/2017/005678"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority" : [ {
+    "@value" : "Bundesinstitut fÃ¼r Arzneimittel und Medizinprodukte (BfArM)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email" : [ {
+    "@value" : "regulatory@abbott.com"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn" : [ {
+    "@value" : "SRN-DE-MED-0002"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Abbott Medical Devices"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number" : [ {
+    "@value" : "DE/2017/009012"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority" : [ {
+    "@value" : "Bundesinstitut fÃ¼r Arzneimittel und Medizinprodukte (BfArM)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email" : [ {
+    "@value" : "regulatory@siemens-healthineers.com"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn" : [ {
+    "@value" : "SRN-DE-MED-0003"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Siemens Healthineers AG"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number" : [ {
+    "@value" : "NL/2017/003456"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority" : [ {
+    "@value" : "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email" : [ {
+    "@value" : "regulatory@philips.com"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn" : [ {
+    "@value" : "SRN-NL-MED-0004"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Philips Medical Systems"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number" : [ {
+    "@value" : "IE/2017/002345"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority" : [ {
+    "@value" : "Health Products Regulatory Authority (HPRA)"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email" : [ {
+    "@value" : "regulatory@bsci.com"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn" : [ {
+    "@value" : "SRN-IE-MED-0006"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name" : [ {
+    "@value" : "Boston Scientific Corporation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk associated with device malfunction or incorrect functioning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Malfunction Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ManufacturerWithSeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manufacturer With Serious Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ManufacturerWithSeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk arising from the materials used in the device, such as toxicity or incompatibility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Material Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#NearMissIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "An incident that did not result in harm but had the potential to do so under slightly different circumstances."
+  }, {
+    "@value" : "Near Miss Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An organization responsible for designing, producing, packaging, and labeling a medical device before placing it on the market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/resource/Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An error in diagnosis caused by incorrect or misleading results from a medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PatientHarm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarmIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident where patient is harmed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PatientHarmIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dbpedia.org/resource/Adverse_event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ProductQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A defect or deficiency in a device that affects its quality, safety, or performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Product Quality Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Structural failure of mechanical components under physiological load"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code" : [ {
+    "@value" : "A0102"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "Device failure - mechanical"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity" : [ {
+    "@value" : "Critical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InjuryRisk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarm", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type" : [ {
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Thrombus formation on device surface causing embolic events"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code" : [ {
+    "@value" : "A0201"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "Thrombosis - device-related"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity" : [ {
+    "@value" : "Critical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceSafety", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Unintended displacement of implant from intended anatomical position"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code" : [ {
+    "@value" : "A0301"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "Device migration - implant"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity" : [ {
+    "@value" : "Serious"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceSafety", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Cardiac lead displacement requiring repositioning or replacement"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code" : [ {
+    "@value" : "A0302"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "Lead dislodgement"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity" : [ {
+    "@value" : "Serious"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DevicePerformance", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType" ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description" : [ {
+    "@value" : "Battery end-of-life earlier than specified, risking therapy interruption"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code" : [ {
+    "@value" : "A0501"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name" : [ {
+    "@value" : "Battery depletion - premature"
+  } ],
+  "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity" : [ {
+    "@value" : "Critical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RadiationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk associated with exposure to radiation emitted by a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Radiation Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An action aimed at returning or removing a medical device from the market due to safety concerns."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A classification category used to group different types of risks associated with medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A formal notification issued to inform users about potential risks or safety issues related to a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Safety Alert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device intended to be used by laypersons for diagnostic purposes without professional supervision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self-Test Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Serius Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SeriusIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SingleUseDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical device intended to be used on a single patient during a single procedure and not to be reused."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Single Use Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SoftwareRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to software faults, errors, or vulnerabilities in the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Software Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#UserNotice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A communication provided to users containing important safety or usage information about a medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User Notice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "action_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#associatedRiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Polina Petrova"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Relates a risk instance to its corresponding risk type classification"
+  }, {
+    "@value" : "associated risk type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#closure_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#corrective_action_taken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  }, {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  }, {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#device_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the risk or risks linked to a specific incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAssociateadRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a medical device to the organization responsible for its manufacture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasManufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Involves Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "involvesDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that a corrective action reduces or eliminates the impact or likelihood of an incident or associated risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mitigates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  }, {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reporting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reporting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#vann:preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date on which the corrective action was initiated or carried out."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

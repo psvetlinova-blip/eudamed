@@ -1,0 +1,1115 @@
+@prefix : <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16> .
+
+<http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16> rdf:type owl:Ontology ;
+                                                                            <http://purl.org/dc/elements/1.1/creator> "Polina Svetlinova" ;
+                                                                            <http://purl.org/dc/elements/1.1/description> "This ontology is a formal and semantic representation of the catalog of medical and in vitro diagnostic devices operating under the European Union's legal framework. The model structures the relationship between products, their risk levels (according to MDR and IVDR), the responsible parties (manufacturers), and the surveillance cycle (incidents and corrective actions). Its objective is to provide a shared knowledge base that facilitates clinical safety traceability." ;
+                                                                            <http://purl.org/dc/elements/1.1/title> "EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)" ;
+                                                                            <http://purl.org/dc/terms/created> "2026-04-27T00:00:00"^^xsd:dateTime ;
+                                                                            :vann:preferredNamespacePrefix "SRO" ;
+                                                                            owl:versionIRI "V1.0" ;
+                                                                            owl:versionInfo "This ontology provides a formal framework for representing medical device safety data and post-market surveillance under the EUDAMED regulatory context. It defines core classes such as Medical Devices, Manufacturers, and Incidents, along with their hierarchical relationships and safety risks. By leveraging standardized vocabularies like Schema.org and Dublin Core, the model ensures semantic interoperability for tracking corrective actions and serious adverse events, facilitating structured data exchange within the European medical device ecosystem."@en ,
+                                                                                            1.0 ,
+                                                                                            "First Version of EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#vann:preferredNamespacePrefix
+:vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:comment "The date on which the corrective action was initiated or carried out." .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#associatedRiskType
+:associatedRiskType rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain [ rdf:type owl:Restriction ;
+                                  owl:onProperty :associatedRiskType ;
+                                  owl:allValuesFrom :Risk
+                                ] ;
+                    rdfs:range [ rdf:type owl:Restriction ;
+                                 owl:onProperty :associatedRiskType ;
+                                 owl:allValuesFrom :RiskType
+                               ] ;
+                    rdfs:isDefinedBy "Polina Petrova" ;
+                    rdfs:label "Relates a risk instance to its corresponding risk type classification" ,
+                               "associated risk type" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk
+:hasAssociatedRisk rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasAssociatedRisk ;
+                                 owl:allValuesFrom :Incident
+                               ] ;
+                   rdfs:range [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasAssociatedRisk ;
+                                owl:allValuesFrom :Risk
+                              ] ;
+                   rdfs:comment "Indicates the risk or risks linked to a specific incident." ;
+                   rdfs:label "hasAssociateadRisk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range :Organization ;
+                 rdfs:comment "Links a medical device to the organization responsible for its manufacture." ;
+                 rdfs:label "hasManufacturer" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice
+:involvesDevice rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain [ rdf:type owl:Restriction ;
+                              owl:onProperty :involvesDevice ;
+                              owl:allValuesFrom :Incident
+                            ] ;
+                rdfs:range [ rdf:type owl:Restriction ;
+                             owl:onProperty :involvesDevice ;
+                             owl:allValuesFrom :Device
+                           ] ;
+                rdfs:comment "Involves Device" ;
+                rdfs:label "involvesDevice" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates
+:mitigates rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain _:genid7 ;
+           rdfs:range [ rdf:type owl:Restriction ;
+                        owl:onProperty :mitigates ;
+                        owl:allValuesFrom :Incident
+                      ] ;
+           rdfs:comment "Indicates that a corrective action reduces or eliminates the impact or likelihood of an incident or associated risk." ;
+           rdfs:label "mitigates" .
+
+_:genid7 rdf:type owl:Restriction ;
+          owl:onProperty :mitigates ;
+          owl:allValuesFrom :FSCA .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :mitigates ;
+   owl:annotatedProperty rdfs:domain ;
+   owl:annotatedTarget _:genid7 ;
+   rdfs:comment ""
+ ] .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting
+:reporting rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Incident ;
+           rdfs:range :Organization ;
+           rdfs:comment "Reporting" ;
+           rdfs:label "reporting" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date
+:action_date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :FSCA ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "action_date" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type
+:affected_device_type rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Risk ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number
+:authorization_number rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Organization ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#closure_date
+:closure_date rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :FSCA ;
+              rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority
+:competent_authority rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Organization ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#corrective_action_taken
+:corrective_action_taken rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :Incident ;
+                         rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected
+:countries_affected rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :FSCA ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Organization ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported
+:country_reported rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Incident ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :FSCA ,
+                         :Incident ,
+                         :Risk ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date
+:detection_date rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Incident ;
+                rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#device_type
+:device_type rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Device ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected
+:devices_affected rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :FSCA ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Organization ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref
+:eudamed_fsca_ref rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :FSCA ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref
+:eudamed_incident_ref rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Incident ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn
+:eudamed_srn rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Organization ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date
+:event_date rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code
+:imdrf_code rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Risk ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose
+:intended_purpose rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Device ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active
+:is_active rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Device ;
+           rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable
+:is_implantable rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Device ;
+                rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd
+:is_ivd rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Device ;
+        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable
+:is_reusable rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Device ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Device ,
+                  :Organization ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome
+:outcome rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age
+:patient_age rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Incident ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex
+:patient_sex rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Incident ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability
+:probability rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework
+:regulatory_framework rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Device ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date
+:report_date rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Incident ;
+             rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name
+:risk_name rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope
+:scope rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :FSCA ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity
+:severity rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Risk ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :FSCA ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di
+:udi_di rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Device ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveDevice
+:ActiveDevice rdf:type owl:Class ;
+              rdfs:subClassOf :Device ;
+              rdfs:comment "A medical device that depends on a source of energy." ;
+              rdfs:isDefinedBy "Polina Petrova" ;
+              rdfs:label "ActiveDevice" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveImplant
+:ActiveImplant rdf:type owl:Class ;
+               rdfs:subClassOf :Device ;
+               rdfs:comment "An active medical device designed to be implanted in the body and powered by an internal or external energy source." ;
+               rdfs:isDefinedBy "Polina Petrova" ;
+               rdfs:label "ActiveImplant" ;
+               owl:priorVersion 1.0 .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ContaminationRisk
+:ContaminationRisk rdf:type owl:Class ;
+                   rdfs:subClassOf :RiskType ;
+                   rdfs:comment "Risk of contamination affecting the safety or effectiveness of a device." ;
+                   rdfs:label "Contamination Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#CybersecurityRisk
+:CybersecurityRisk rdf:type owl:Class ;
+                   rdfs:subClassOf :RiskType ;
+                   rdfs:comment "Risk related to unauthorized access, cyberattacks, or data breaches involving the device." ;
+                   rdfs:label "Cybersecurity Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device
+:Device rdf:type owl:Class ;
+        <http://purl.org/dc/elements/1.1/title> "Device" ;
+        rdfs:comment "Device" ;
+        rdfs:label "Device" ;
+        rdfs:seeAlso "https://dbpedia.org/resource/Medical_device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure
+:DeviceFailure rdf:type owl:Class ;
+               rdfs:subClassOf :Risk ;
+               rdfs:comment "The combination of the likelihood of occurrence of harm and the severity of that harm." ;
+               rdfs:label "DeviceFailure" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailureIncident
+:DeviceFailureIncident rdf:type owl:Class ;
+                       rdfs:subClassOf :Incident ;
+                       rdfs:comment "Incident where Device Failured" ;
+                       rdfs:label "DeviceFailureIncident" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DevicePerformance
+:DevicePerformance rdf:type owl:Class ;
+                   rdfs:subClassOf :Risk ;
+                   rdfs:comment "A malfunction or breakdown of a device that prevents it from performing as intended." ;
+                   rdfs:label "DevicePerformance" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceSafety
+:DeviceSafety rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ;
+              rdfs:comment "A problem related to the device not achieving its expected performance." ;
+              rdfs:label "Device Performance Issue" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticError
+:DiagnosticError rdf:type owl:Class ;
+                 rdfs:subClassOf :Risk ;
+                 rdfs:comment "A risk associated with unsafe conditions or improper functioning of a device." ;
+                 rdfs:label "Device Safety Issue" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticRisk
+:DiagnosticRisk rdf:type owl:Class ;
+                rdfs:subClassOf :RiskType ;
+                rdfs:comment "Risk of incorrect or delayed diagnosis due to device limitations or errors." ;
+                rdfs:label "Diagnostic Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA
+:FSCA rdf:type owl:Class ;
+      rdfs:comment "An action taken by a manufacturer to reduce the risk of death or serious deterioration in health associated with a medical device already placed on the market." ;
+      rdfs:label "Field Safety Corrective Action" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableActiveDevice
+:ImplantableActiveDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :Device ;
+                         rdfs:comment "A medical device intended to be totally or partially introduced into the human body and remain there after the procedure, requiring a source of energy to operate." ;
+                         rdfs:label "Implantable Active Device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableDevice
+:ImplantableDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :Device ;
+                   rdfs:comment "A medical device intended to be placed inside the human body, either permanently or for a prolonged period." ,
+                                "Implantable Device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InSituCorrection
+:InSituCorrection rdf:type owl:Class ;
+                  rdfs:subClassOf :FSCA ;
+                  rdfs:comment "A corrective action performed directly on the device at its location without removing it from service." ,
+                               "In Situ Correction" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :Device ;
+                         rdfs:comment "A device used to perform tests on samples such as blood or tissue taken from the human body." ;
+                         rdfs:label "In Vitro Diagnostic Device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:comment "An event related to the use of a medical device that has caused or could potentially cause harm." ;
+          rdfs:label "Incident" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InfectionRisk
+:InfectionRisk rdf:type owl:Class ;
+               rdfs:subClassOf :RiskType ;
+               rdfs:comment "Risk of infection caused by contamination or improper sterilization of the device." ;
+               rdfs:label "Infection Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InjuryRisk
+:InjuryRisk rdf:type owl:Class ;
+            rdfs:subClassOf :RiskType ;
+            rdfs:comment "Risk of physical harm or injury resulting from the use of a device." ;
+            rdfs:label "Injury Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InterferenceRisk
+:InterferenceRisk rdf:type owl:Class ;
+                  rdfs:subClassOf :RiskType ;
+                  rdfs:comment "Risk caused by external interference affecting the device’s operation" ;
+                  rdfs:label "Interference Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk
+:MalfunctionRisk rdf:type owl:Class ;
+                 rdfs:subClassOf :RiskType ;
+                 rdfs:comment "Risk associated with device malfunction or incorrect functioning" ;
+                 rdfs:label "Malfunction Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ManufacturerWithSeriousIncident
+:ManufacturerWithSeriousIncident rdf:type owl:Class ;
+                                 rdfs:subClassOf :Organization ;
+                                 rdfs:comment "Manufacturer With Serious Incident" ;
+                                 rdfs:label "ManufacturerWithSeriousIncident" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MaterialRisk
+:MaterialRisk rdf:type owl:Class ;
+              rdfs:subClassOf :RiskType ;
+              rdfs:comment "Risk arising from the materials used in the device, such as toxicity or incompatibility." ;
+              rdfs:label "Material Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#NearMissIncident
+:NearMissIncident rdf:type owl:Class ;
+                  rdfs:subClassOf :Incident ;
+                  rdfs:label "An incident that did not result in harm but had the potential to do so under slightly different circumstances." ,
+                             "Near Miss Incident" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:comment "An organization responsible for designing, producing, packaging, and labeling a medical device before placing it on the market." ;
+              rdfs:label "Manufacturer" ;
+              rdfs:seeAlso "https://dbpedia.org/resource/Manufacturer" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarm
+:PatientHarm rdf:type owl:Class ;
+             rdfs:subClassOf :Risk ;
+             rdfs:comment "An error in diagnosis caused by incorrect or misleading results from a medical device." ;
+             rdfs:label "PatientHarm" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarmIncident
+:PatientHarmIncident rdf:type owl:Class ;
+                     rdfs:subClassOf :Incident ;
+                     rdfs:comment "Incident where patient is harmed" ;
+                     rdfs:label "PatientHarmIncident" ;
+                     rdfs:seeAlso "https://dbpedia.org/resource/Adverse_event" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ProductQuality
+:ProductQuality rdf:type owl:Class ;
+                rdfs:subClassOf :Risk ;
+                rdfs:comment "A defect or deficiency in a device that affects its quality, safety, or performance." ;
+                rdfs:label "Product Quality Issue" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RadiationRisk
+:RadiationRisk rdf:type owl:Class ;
+               rdfs:subClassOf :RiskType ;
+               rdfs:comment "Risk associated with exposure to radiation emitted by a device." ;
+               rdfs:label "Radiation Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :FSCA ;
+        rdfs:comment "An action aimed at returning or removing a medical device from the market due to safety concerns." ;
+        rdfs:label "Recall" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:comment "Risk" ;
+      rdfs:label "Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType
+:RiskType rdf:type owl:Class ;
+          rdfs:comment "A classification category used to group different types of risks associated with medical devices." ;
+          rdfs:label "Risk Type" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf :FSCA ;
+             rdfs:comment "A formal notification issued to inform users about potential risks or safety issues related to a device." ;
+             rdfs:label "Safety Alert" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SelfTestDevice
+:SelfTestDevice rdf:type owl:Class ;
+                rdfs:subClassOf :Device ;
+                rdfs:comment "A device intended to be used by laypersons for diagnostic purposes without professional supervision." ;
+                rdfs:label "Self-Test Device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident ;
+                 rdfs:comment "Serius Incident" ;
+                 rdfs:label "SeriusIncident" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SingleUseDevice
+:SingleUseDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :Device ;
+                 rdfs:comment "A medical device intended to be used on a single patient during a single procedure and not to be reused." ;
+                 rdfs:label "Single Use Device" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SoftwareRisk
+:SoftwareRisk rdf:type owl:Class ;
+              rdfs:subClassOf :RiskType ;
+              rdfs:comment "Risk related to software faults, errors, or vulnerabilities in the device." ;
+              rdfs:label "Software Risk" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#UserNotice
+:UserNotice rdf:type owl:Class ;
+            rdfs:subClassOf :FSCA ;
+            rdfs:comment "A communication provided to users containing important safety or usage information about a medical device." ;
+            rdfs:label "User Notice" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ,
+                  :Device ,
+                  :ImplantableActiveDevice ;
+         :hasManufacturer :MAN-001 ;
+         :device_type "ImplantableActiveDevice" ;
+         :intended_purpose "Ventricular assist device for end-stage heart failure" ;
+         :is_active "true"^^xsd:boolean ;
+         :is_implantable "true"^^xsd:boolean ;
+         :is_ivd "false"^^xsd:boolean ;
+         :is_reusable "false"^^xsd:boolean ;
+         :name "HeartMate 3 LVAD" ;
+         :regulatory_framework "MDR" ;
+         :risk_name "ClassIII" ;
+         :udi_di "(01)00380740009095" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-002
+:DEV-002 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ,
+                  :Device ;
+         :hasManufacturer :MAN-001 ;
+         :device_type "ActiveImplant" ;
+         :intended_purpose "Leadless cardiac pacemaker for atrioventricular synchrony" ;
+         :is_active "false"^^xsd:boolean ,
+                    "true"^^xsd:boolean ;
+         :is_implantable "true"^^xsd:boolean ;
+         :is_ivd "false"^^xsd:boolean ;
+         :name "Micra AV Transcatheter Pacing System" ;
+         :regulatory_framework "MDR" ;
+         :risk_name "ClassIII" ;
+         :udi_di "(01)00380740009112" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-003
+:DEV-003 rdf:type owl:NamedIndividual ,
+                  :Device ,
+                  :ImplantableDevice ;
+         :hasManufacturer :MAN-002 ;
+         :intended_purpose "Transcatheter aortic valve replacement (TAVI)" ;
+         :is_active "false"^^xsd:boolean ;
+         :is_implantable "true"^^xsd:boolean ;
+         :is_ivd "false"^^xsd:boolean ;
+         :is_reusable "false"^^xsd:boolean ;
+         :name "Portico Transcatheter Heart Valve" ;
+         :regulatory_framework "MDR" ;
+         :risk_name "ClassIII" ;
+         :udi_di "(01)00800002222291" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-004
+:DEV-004 rdf:type owl:NamedIndividual ,
+                  :Device ,
+                  :ImplantableActiveDevice ;
+         :hasManufacturer :MAN-006 ;
+         :intended_purpose "Drug-eluting coronary stent" ;
+         :is_active "false"^^xsd:boolean ;
+         :is_implantable "true"^^xsd:boolean ;
+         :is_ivd "false"^^xsd:boolean ;
+         :is_reusable "false"^^xsd:boolean ;
+         :name "SYNERGY Stent System" ;
+         :regulatory_framework "MDR" ;
+         :risk_name "ClassIIb" ;
+         :udi_di "(01)08714729002817" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-005
+:DEV-005 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ,
+                  :Device ;
+         :hasManufacturer :MAN-006 ;
+         :intended_purpose "Cardiac resynchronization therapy lead" ;
+         :is_active "false"^^xsd:boolean ;
+         :is_implantable "true"^^xsd:boolean ;
+         :is_ivd "false"^^xsd:boolean ;
+         :is_reusable "false"^^xsd:boolean ;
+         :name "ACUITY X4 Quadripolar LV Lead" ;
+         :regulatory_framework "MDR" ;
+         :risk_name "ClassIII" ;
+         :udi_di "(01)08714729004873" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   :FSCA ,
+                   :SafetyAlert ;
+          :mitigates :INC-001 ;
+          :action_date "2024-02-01T00:00:00"^^xsd:dateTime ;
+          :countries_affected "EU-wide" ;
+          :description "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0â€“3.0." ;
+          :devices_affected 850 ;
+          :eudamed_fsca_ref "EU-FSCA-2024-000001" ;
+          :scope "All HeartMate 3 LVAD units implanted since 2020" ;
+          :status "Open" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-002
+:FSCA-002 rdf:type owl:NamedIndividual ,
+                   :FSCA ,
+                   :Recall ;
+          :mitigates :INC-002 ;
+          :action_date "2024-02-28T00:00:00"^^xsd:dateTime ;
+          :closure_date "2024-05-31T00:00:00"^^xsd:dateTime ;
+          :countries_affected "EU-wide + UK" ;
+          :description "Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided. 97% of affected devices successfully replaced." ;
+          :devices_affected 1240 ;
+          :eudamed_fsca_ref "EU-FSCA-2024-000002" ;
+          :scope "Micra AV lots manufactured between 2022-09 and 2023-03" ;
+          :status "Closed" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-003
+:FSCA-003 rdf:type owl:NamedIndividual ,
+                   :FSCA ,
+                   :InSituCorrection ;
+          :mitigates :INC-003 ;
+          :action_date "2024-03-15T00:00:00"^^xsd:dateTime ;
+          :closure_date "2024-06-30T00:00:00"^^xsd:dateTime ;
+          :countries_affected "EU-wide" ;
+          :description "Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres." ;
+          :devices_affected 320 ;
+          :eudamed_fsca_ref "EU-FSCA-2024-000003" ;
+          :scope "Portico THV sizes 23mm and 25mm from lots before 2023-11" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-004
+:FSCA-004 rdf:type owl:NamedIndividual ,
+                   :FSCA ,
+                   :SafetyAlert ;
+          :mitigates :INC-005 ;
+          :action_date "2024-04-10T00:00:00"^^xsd:dateTime ;
+          :countries_affected "EU-wide" ;
+          :description "Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation." ;
+          :devices_affected 2100 ;
+          :eudamed_fsca_ref "EU-FSCA-2024-000004" ;
+          :scope "All ACUITY X4 quadripolar LV leads" ;
+          :status "Open" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  :SeriousIncident ;
+         :hasAssociatedRisk :RSK-003 ;
+         :involvesDevice :DEV-001 ;
+         :reporting :MAN-001 ;
+         :country_reported "Germany" ;
+         :description "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." ;
+         :detection_date "2024-01-10T00:00:00"^^xsd:dateTime ;
+         :eudamed_incident_ref "EU-INC-2024-000001" ;
+         :event_date "2024-01-08T00:00:00"^^xsd:dateTime ;
+         :outcome "Serious patient injury - embolic stroke" ;
+         :patient_age 58 ;
+         :patient_sex "Male" ;
+         :report_date "2024-01-15T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-002
+:INC-002 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  :SeriousIncident ;
+         :hasAssociatedRisk :RSK-003 ;
+         :involvesDevice :DEV-002 ;
+         :reporting :MAN-001 ;
+         :country_reported "France" ;
+         :description "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification." ;
+         :detection_date "2024-02-01T00:00:00"^^xsd:dateTime ;
+         :eudamed_incident_ref "EU-INC-2024-000002" ;
+         :event_date "2024-01-29T00:00:00"^^xsd:dateTime ;
+         :outcome "Device malfunction - premature battery depletion" ;
+         :patient_age 72 ;
+         :patient_sex "Female" ;
+         :report_date "2024-02-03T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-003
+:INC-003 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  :SeriousIncident ;
+         :hasAssociatedRisk :RSK-005 ;
+         :involvesDevice :DEV-003 ;
+         :reporting :MAN-002 ;
+         :country_reported "Italy" ;
+         :description "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure." ;
+         :detection_date "2024-02-18T00:00:00"^^xsd:dateTime ;
+         :eudamed_incident_ref "EU-INC-2024-000003" ;
+         :event_date "2024-02-15T00:00:00"^^xsd:dateTime ;
+         :outcome "Surgical intervention required - valve re-anchoring" ;
+         :patient_age 67 ;
+         :patient_sex "Male" ;
+         :report_date "2024-02-20T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-004
+:INC-004 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  :SeriousIncident ;
+         :hasAssociatedRisk :RSK-002 ;
+         :involvesDevice :DEV-004 ;
+         :reporting :MAN-006 ;
+         :action_date "2024-03-05T00:00:00"^^xsd:dateTime ;
+         :country_reported "Spain" ;
+         :description "SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis." ;
+         :eudamed_incident_ref "EU-INC-2024-000004" ;
+         :event_date "2024-02-28T00:00:00"^^xsd:dateTime ;
+         :outcome "Device malfunction - stent fracture" ;
+         :patient_age 55 ;
+         :patient_sex "Female" ;
+         :report_date "2024-03-03T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-005
+:INC-005 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  :SeriousIncident ;
+         :hasAssociatedRisk :RSK-006 ;
+         :involvesDevice :DEV-005 ;
+         :reporting :MAN-006 ;
+         :country_reported "Netherlands" ;
+         :description "ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning." ;
+         :detection_date "2024-03-16T00:00:00"^^xsd:dateTime ;
+         :eudamed_incident_ref "EU-INC-2024-000005" ;
+         :event_date "2024-03-12T00:00:00"^^xsd:dateTime ;
+         :outcome "Surgical intervention required - lead extraction" ;
+         :patient_age 63 ;
+         :patient_sex "Male" ;
+         :report_date "2024-03-18T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  :Organization ;
+         :authorization_number "IE/2017/001234" ;
+         :competent_authority "Health Products Regulatory Authority (HPRA)" ;
+         :country "Ireland" ;
+         :email "regulatory@medtronic.com" ;
+         :eudamed_srn "SRN-IE-MED-0001" ;
+         :name "Medtronic plc" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-002
+:MAN-002 rdf:type owl:NamedIndividual ,
+                  :Organization ;
+         :authorization_number "DE/2017/005678" ;
+         :competent_authority "Bundesinstitut fÃ¼r Arzneimittel und Medizinprodukte (BfArM)" ;
+         :country "Germany" ;
+         :email "regulatory@abbott.com" ;
+         :eudamed_srn "SRN-DE-MED-0002" ;
+         :name "Abbott Medical Devices" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-003
+:MAN-003 rdf:type owl:NamedIndividual ,
+                  :Organization ;
+         :authorization_number "DE/2017/009012" ;
+         :competent_authority "Bundesinstitut fÃ¼r Arzneimittel und Medizinprodukte (BfArM)" ;
+         :country "Germany" ;
+         :email "regulatory@siemens-healthineers.com" ;
+         :eudamed_srn "SRN-DE-MED-0003" ;
+         :name "Siemens Healthineers AG" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-004
+:MAN-004 rdf:type owl:NamedIndividual ,
+                  :Organization ;
+         :authorization_number "NL/2017/003456" ;
+         :competent_authority "Rijksinstituut voor Volksgezondheid en Milieu (RIVM)" ;
+         :country "Netherlands" ;
+         :email "regulatory@philips.com" ;
+         :eudamed_srn "SRN-NL-MED-0004" ;
+         :name "Philips Medical Systems" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006
+:MAN-006 rdf:type owl:NamedIndividual ,
+                  :Organization ;
+         :authorization_number "IE/2017/002345" ;
+         :competent_authority "Health Products Regulatory Authority (HPRA)" ;
+         :country "Ireland" ;
+         :email "regulatory@bsci.com" ;
+         :eudamed_srn "SRN-IE-MED-0006" ;
+         :name "Boston Scientific Corporation" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002
+:RSK-002 rdf:type owl:NamedIndividual ,
+                  :DeviceFailure ,
+                  :MalfunctionRisk ,
+                  :Risk ,
+                  :RiskType ;
+         :affected_device_type "ImplantableDevice" ;
+         :description "Structural failure of mechanical components under physiological load" ;
+         :imdrf_code "A0102" ;
+         :probability "Medium" ;
+         :risk_name "Device failure - mechanical" ;
+         :severity "Critical" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  :InjuryRisk ,
+                  :PatientHarm ,
+                  :Risk ,
+                  :RiskType ;
+         :affected_device_type "ImplantableActiveDevice" ;
+         :description "Thrombus formation on device surface causing embolic events" ;
+         :imdrf_code "A0201" ;
+         :probability "Low" ;
+         :risk_name "Thrombosis - device-related" ;
+         :severity "Critical" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005
+:RSK-005 rdf:type owl:NamedIndividual ,
+                  :DeviceSafety ,
+                  :MalfunctionRisk ,
+                  :Risk ,
+                  :RiskType ;
+         :affected_device_type "ImplantableDevice" ;
+         :description "Unintended displacement of implant from intended anatomical position" ;
+         :imdrf_code "A0301" ;
+         :probability "Low" ;
+         :risk_name "Device migration - implant" ;
+         :severity "Serious" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006
+:RSK-006 rdf:type owl:NamedIndividual ,
+                  :DeviceSafety ,
+                  :MalfunctionRisk ,
+                  :Risk ,
+                  :RiskType ;
+         :affected_device_type "ActiveImplant" ;
+         :description "Cardiac lead displacement requiring repositioning or replacement" ;
+         :imdrf_code "A0302" ;
+         :probability "Medium" ;
+         :risk_name "Lead dislodgement" ;
+         :severity "Serious" .
+
+
+###  http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009
+:RSK-009 rdf:type owl:NamedIndividual ,
+                  :DevicePerformance ,
+                  :MalfunctionRisk ,
+                  :Risk ,
+                  :RiskType ;
+         :affected_device_type "ActiveImplant" ;
+         :description "Battery end-of-life earlier than specified, risking therapy interruption" ;
+         :imdrf_code "A0501" ;
+         :probability "Low" ;
+         :risk_name "Battery depletion - premature" ;
+         :severity "Critical" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "If the incident is due to the device" ;
+   rdfs:label "IncidentDueToDevice" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAssociatedRisk ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :DeviceFailure ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :DeviceFailureIncident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Harmed the patient during intervention" ;
+   rdfs:label "IncidentCausedHarmToPatient" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAssociatedRisk ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :DeviceFailure ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :PatientHarmIncident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16/i>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

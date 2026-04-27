@@ -1,0 +1,2302 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16" ],
+    "title" : {
+      "undefined" : "EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)"
+    },
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "version" : "1.0",
+    "author" : [ "Polina Svetlinova" ],
+    "description" : {
+      "undefined" : "This ontology is a formal and semantic representation of the catalog of medical and in vitro diagnostic devices operating under the European Union's legal framework. The model structures the relationship between products, their risk levels (according to MDR and IVDR), the responsible parties (manufacturers), and the surveillance cycle (incidents and corrective actions). Its objective is to provide a shared knowledge base that facilitates clinical safety traceability."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "V1.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Polina Svetlinova",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-27T00:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "SRO",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      }, {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "This ontology provides a formal framework for representing medical device safety data and post-market surveillance under the EUDAMED regulatory context. It defines core classes such as Medical Devices, Manufacturers, and Incidents, along with their hierarchical relationships and safety risks. By leveraging standardized vocabularies like Schema.org and Dublin Core, the model ensures semantic interoperability for tracking corrective actions and serious adverse events, facilitating structured data exchange within the European medical device ecosystem.",
+        "type" : "label"
+      }, {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "First Version of EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarmIncident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/resource/Adverse_event",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatientHarmIncident",
+      "undefined" : "PatientHarmIncident"
+    },
+    "comment" : {
+      "undefined" : "Incident where patient is harmed"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SingleUseDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "undefined" : "Single Use Device"
+    },
+    "comment" : {
+      "undefined" : "A medical device intended to be used on a single patient during a single procedure and not to be reused."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#CybersecurityRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "undefined" : "Cybersecurity Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to unauthorized access, cyberattacks, or data breaches involving the device."
+    },
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceSafety",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceSafety",
+      "undefined" : "Device Performance Issue"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-006"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-005"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A problem related to the device not achieving its expected performance."
+    },
+    "id" : "37",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "undefined" : "In Vitro Diagnostic Device"
+    },
+    "comment" : {
+      "undefined" : "A device used to perform tests on samples such as blood or tissue taken from the human body."
+    },
+    "id" : "43",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InterferenceRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "undefined" : "Interference Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk caused by external interference affecting the device’s operation"
+    },
+    "id" : "48",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MalfunctionRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "undefined" : "Malfunction Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-009"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-006"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-002"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk associated with device malfunction or incorrect functioning"
+    },
+    "id" : "50",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveImplant",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Polina Petrova",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "undefined" : "ActiveImplant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-005"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An active medical device designed to be implanted in the body and powered by an internal or external energy source."
+    },
+    "id" : "55",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SeriousIncident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "undefined" : "SeriusIncident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-004"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Serius Incident"
+    },
+    "id" : "66",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Recall",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "undefined" : "Recall"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-002"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An action aimed at returning or removing a medical device from the market due to safety concerns."
+    },
+    "id" : "83",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "4", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InSituCorrection",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A corrective action performed directly on the device at its location without removing it from service."
+    },
+    "id" : "91",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "28" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SafetyAlert",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "undefined" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-004"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A formal notification issued to inform users about potential risks or safety issues related to a device."
+    },
+    "id" : "95",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InjuryRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "undefined" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk of physical harm or injury resulting from the use of a device."
+    },
+    "id" : "68",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Incident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-004"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#INC-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "INC-001"
+      }
+    } ],
+    "subClasses" : [ "82", "3", "75", "66" ],
+    "comment" : {
+      "undefined" : "An event related to the use of a medical device that has caused or could potentially cause harm."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticError",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticError",
+      "undefined" : "Device Safety Issue"
+    },
+    "comment" : {
+      "undefined" : "A risk associated with unsafe conditions or improper functioning of a device."
+    },
+    "id" : "104",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RiskType",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskType",
+      "undefined" : "Risk Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-009"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-006"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-003"
+      }
+    } ],
+    "subClasses" : [ "79", "77", "68", "48", "72", "50", "54", "31", "57", "106" ],
+    "comment" : {
+      "undefined" : "A classification category used to group different types of risks associated with medical devices."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A medical device intended to be placed inside the human body, either permanently or for a prolonged period."
+    },
+    "id" : "110",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ManufacturerWithSeriousIncident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManufacturerWithSeriousIncident",
+      "undefined" : "ManufacturerWithSeriousIncident"
+    },
+    "comment" : {
+      "undefined" : "Manufacturer With Serious Incident"
+    },
+    "id" : "98",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FSCA",
+      "undefined" : "Field Safety Corrective Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#FSCA-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "FSCA-004"
+      }
+    } ],
+    "subClasses" : [ "95", "83", "111", "91" ],
+    "comment" : {
+      "undefined" : "An action taken by a manufacturer to reduce the risk of death or serious deterioration in health associated with a medical device already placed on the market."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Risk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "undefined" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-009"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-006",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-006"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-005"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-003"
+      }
+    } ],
+    "subClasses" : [ "114", "115", "37", "116", "104", "117" ],
+    "comment" : {
+      "undefined" : "Risk"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#PatientHarm",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatientHarm",
+      "undefined" : "PatientHarm"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An error in diagnosis caused by incorrect or misleading results from a medical device."
+    },
+    "id" : "114",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DiagnosticRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "undefined" : "Diagnostic Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk of incorrect or delayed diagnosis due to device limitations or errors."
+    },
+    "id" : "77",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ContaminationRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "undefined" : "Contamination Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk of contamination affecting the safety or effectiveness of a device."
+    },
+    "id" : "54",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SelfTestDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "undefined" : "Self-Test Device"
+    },
+    "comment" : {
+      "undefined" : "A device intended to be used by laypersons for diagnostic purposes without professional supervision."
+    },
+    "id" : "102",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailureIncident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceFailureIncident",
+      "undefined" : "DeviceFailureIncident"
+    },
+    "comment" : {
+      "undefined" : "Incident where Device Failured"
+    },
+    "id" : "82",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#NearMissIncident",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "undefined" : "An incident that did not result in harm but had the potential to do so under slightly different circumstances."
+    },
+    "id" : "75",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DevicePerformance",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DevicePerformance",
+      "undefined" : "DevicePerformance"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-009",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-009"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A malfunction or breakdown of a device that prevents it from performing as intended."
+    },
+    "id" : "116",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Device",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "annotations" : {
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Device",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/resource/Medical_device",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-004"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-005",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-005"
+      }
+    } ],
+    "subClasses" : [ "55", "43", "110", "22", "119", "113", "102" ],
+    "comment" : {
+      "undefined" : "Device"
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ProductQuality",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductQuality",
+      "undefined" : "Product Quality Issue"
+    },
+    "comment" : {
+      "undefined" : "A defect or deficiency in a device that affects its quality, safety, or performance."
+    },
+    "id" : "115",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RadiationRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "undefined" : "Radiation Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk associated with exposure to radiation emitted by a device."
+    },
+    "id" : "79",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#UserNotice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "undefined" : "User Notice"
+    },
+    "comment" : {
+      "undefined" : "A communication provided to users containing important safety or usage information about a medical device."
+    },
+    "id" : "111",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MaterialRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "undefined" : "Material Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk arising from the materials used in the device, such as toxicity or incompatibility."
+    },
+    "id" : "57",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#SoftwareRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "undefined" : "Software Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to software faults, errors, or vulnerabilities in the device."
+    },
+    "id" : "106",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#Organization",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/resource/Manufacturer",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "MAN-001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-003",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "MAN-003"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "MAN-002"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "MAN-004"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#MAN-006",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "MAN-006"
+      }
+    } ],
+    "subClasses" : [ "98" ],
+    "comment" : {
+      "undefined" : "An organization responsible for designing, producing, packaging, and labeling a medical device before placing it on the market."
+    },
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DeviceFailure",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceFailure",
+      "undefined" : "DeviceFailure"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#RSK-002",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "RSK-002"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The combination of the likelihood of occurrence of harm and the severity of that harm."
+    },
+    "id" : "117",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Polina Petrova",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "undefined" : "ActiveDevice"
+    },
+    "comment" : {
+      "undefined" : "A medical device that depends on a source of energy."
+    },
+    "id" : "119",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#InfectionRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "undefined" : "Infection Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk of infection caused by contamination or improper sterilization of the device."
+    },
+    "id" : "72",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#ImplantableActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "undefined" : "Implantable Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-001",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-001"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#DEV-004",
+      "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+      "labels" : {
+        "IRI-based" : "DEV-004"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A medical device intended to be totally or partially introduced into the human body and remain there after the procedure, requiring a source of energy to operate."
+    },
+    "id" : "113",
+    "superClasses" : [ "23" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#involvesDevice",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "undefined" : "involvesDevice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Involves Device"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#detection_date",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "detection_date"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#affected_device_type",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "affected_device_type"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_age",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "patient_age"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_fsca_ref",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "eudamed_fsca_ref"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#name",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#countries_affected",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "countries_affected"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#device_type",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "device_type"
+    },
+    "domain" : "23",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_srn",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "eudamed_srn"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#reporting",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "reporting",
+      "undefined" : "reporting"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Reporting"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "country"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#closure_date",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "closure_date"
+    },
+    "domain" : "13",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#regulatory_framework",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "regulatory_framework"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "range" : "32",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "32",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#status",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "status"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "hasManufacturer"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Links a medical device to the organization responsible for its manufacture."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#associatedRiskType",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Polina Petrova",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "associatedRiskType",
+      "undefined" : "associated risk type"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#report_date",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "report_date"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#event_date",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "event_date"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "32",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "32",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "32",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#eudamed_incident_ref",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "eudamed_incident_ref"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "32",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "4",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "4",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "32",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "32",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#competent_authority",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "competent_authority"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_ivd",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "is_ivd"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#severity",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "severity"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "range" : "28",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#authorization_number",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "authorization_number"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "range" : "23",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#email",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "email"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#devices_affected",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "devices_affected"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#intended_purpose",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "intended_purpose"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#patient_sex",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "patient_sex"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#scope",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "scope"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "range" : "23",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "23",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_implantable",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "is_implantable"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "range" : "23",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "23",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_active",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "is_active"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#is_reusable",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "is_reusable"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "23",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "8",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "8",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "8",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "8",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#risk_name",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "risk_name"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "range" : "8",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "13",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "8",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "13",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#description",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "range" : "32",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "13",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "13",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#probability",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "probability"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#imdrf_code",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "imdrf_code"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#hasAssociatedRisk",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAssociatedRisk",
+      "undefined" : "hasAssociateadRisk"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the risk or risks linked to a specific incident."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#country_reported",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "country_reported"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#corrective_action_taken",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "corrective_action_taken"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#mitigates",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "mitigates",
+      "undefined" : "mitigates"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates that a corrective action reduces or eliminates the impact or likelihood of an incident or associated risk."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#outcome",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "outcome"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#udi_di",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "udi_di"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16#action_date",
+    "baseIri" : "http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "action_date",
+      "undefined" : "action_date"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  } ]
+}

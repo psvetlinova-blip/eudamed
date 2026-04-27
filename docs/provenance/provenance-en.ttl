@@ -1,0 +1,12 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "EUDAMED-SRO (EUDAMED Semantic Regulation Ontology)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://www.semanticweb.org/polina/ontologies/2026/3/untitled-ontology-16>;
+	 prov:wasGeneratedAt "2026-04-27T00:00:00";
+.
+:agent0 a prov:Agent; foaf:name "Polina Svetlinova".
